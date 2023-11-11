@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 def print_sorted_dictionary(a_dictionary):
-    if(a_dictionary):
-        for x, val in sorted(a_dictionary.items()):
-            print("{}: {}".format(x, val))
+    """print sorted dictionary
+
+    Args:
+        a_dictionary: the dictionary
+
+    Returns:
+         nothing
+    """
+    [print("{}: {}".format(k, a_dictionary[k])) for k in sorted(a_dictionary)]
